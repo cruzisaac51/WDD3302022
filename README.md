@@ -3,7 +3,8 @@
 ![BYU](images/byu.png)
 ### Professors
  `Andrew Chandler`
-#Technologies used
+
+# Technologies used
 ```
 HTML3
 CSS5
