@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week 1 notes</title>
+    <meta name="description" content="Assignment portal for Isaac Cruz in WDD 330: Web Frontend Development at Brigham Young University - Idaho">
+
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Story Editor</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="content-hero">
+                <label for="name_input">Story Name:<br></label>  
+                <input type="text" placeholder="Title for your story" id=name_input></input>
+                <br>
+                <div class="buttons_story">
+                    <button type="submit" onclick="loadStory()">Find and Edit It</button>
+                    <button type="submit" onclick="saveStory()">Save It</button>
+                    <button type="submit" onclick="displayStory()">Display It</button>
+                </div>
+            </div>
+            <textarea id="story_editor" placeholder="Write a totally awesome story here."></textarea>
+            <section class="displaystory" id="story_display"></section>
+        </div>
+    </main>
+    <footer>
+        <div class="social ">
+            <div class="copyrights ">
+                <p>
+                    &copy;
+                    <span id="dateyear"></span>|Isaac Cruz - WDD 330
+                    <p><a href="../index.html">Go back to home </a></p>
+                    <p><a href="https://www.byui.edu/online ">BYU | online | Learning |</a></p>
+            </div>
+            <div class="lastupdated">
+                <span id="lastUpdated">
+            </span>
+            </div>
+            <script src="js/script.js"></script>
+        </div>
+    </footer>
+</body>
+
+
+</html>
