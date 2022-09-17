@@ -1,2 +1,8 @@
 # WDD3302022
  WEB FRONTEND DEVELOPMENT II
+
+
+#Technologies used
+HTML3
+CSS5
+JavaScript
