@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 330 | Week 2</title>
+</head>
+<body>
+    <section>
+        <div class="fields">
+            <input type="number" class="inputs" placeholder="enter a number" id="first-input">
+            <input type="number" class="inputs" placeholder="enter a number" id="second-input">
+        </div>
+        <div class="btns">
+            <button id="add-button" onclick="add1()">ADD</button>
+            <button id="subtract-button" onclick="performOperation(sub2)">SUBTRACT</button>
+            <button id="multiply" onclick="performOperation(mult2)">MULTIPLY</button>
+            <button id="clearbtn1" onclick="clear_inputs()">Clear</button>
+        </div>
+    </section>
+    <div class="inputs" id="result-area">
+
+    </div>
+    <h4><a href="../index.html ">week2</a></h4>
+    <h4><a href="../../index.html ">home</a></h4>
+</body>
+<script>
+    // const addButton = document.getElementById('add-button')
+    // const subtractButton = document.getElementById('subtract-button')
+    // const multiplyButton = document.getElementById('multiply')
+
+
+    // let firstNumber = document.getElementById('first-input').value;
+    // let secondNumber = document.getElementById('second-input').value;
+    // const resultArea = document.getElementById('result-area');
+    // function add() {
+    //     const input = document.getElementById('first-input').value;
+    //     const outputElement = document.getElementById('result-area');
+    //     const inputInt = parseInt(input);
+    //     if (inputInt !== NaN) {
+    //       outputElement.innerHTML = 'total: ' + sum(inputInt);
+    //     }
+    // }
+    // function sum(number) {
+    //     let total = 0;
+    //     for (let i = 1; i <= number; i++) {
+    //       total += i;
+    //     }
+    //     return total;
+    //   }
+
+    function add1() {
+        const firstNumber = document.getElementById('first-input').value;
+        const secondNumber = document.getElementById('second-input').value;
+        const resultArea = document.getElementById('result-area');
+
+        const num1 = parseFloat(firstNumber);
+        const num2 = parseFloat(secondNumber);
+        if ((num1 !== NaN) && (num2 !== NaN)) {
+            let total = num1 + num2;
+            console.log(num1)
+            resultArea.innerHTML = 'Total: ' + total;
+        }
+    }
+
+    function getNum(numId) {
+        const number = document.getElementById(numId).value;
+        const numberFloat = parseFloat(number);
+        if (numberFloat !== NaN) {
+          return numberFloat;
+        } else return 0;
+    }
+    function updateTotal(value) {
+        const outputElement = document.getElementById('result-area');
+        outputElement.innerHTML = 'Total: ' + value;
+    }
+
+      // function expression
+    const sub2 = function(num1, num2) {
+        return num1 - num2;
+        console.log(num1)
+    };
+    const mult2 = (num1, num2) => num1 * num2;
+
+    function performOperation(operation) {
+        // the argument 'operation' is a function...so when we are ready we can call that function in our code below
+        const total = operation(
+          getNum('first-input'),
+          getNum('second-input')
+        );
+        updateTotal(total);
+    }
+
+    function clear_inputs(){
+        inputs = document.getElementsByClassName('inputs')
+        for(input of inputs){
+    	    input.value=' ' 
+        }
+    }
+    // function addNumbers(num1, num2) {
+    //     return Number(num1) + Number(num2);
+    // }
+
+
+    // subtractButton.addEventListener('click', function(){
+    //     let remainder = Number(firstNumber) - Number(secondNumber)
+    //     resultArea.textContent = remainder;
+    // })
+    // multiplyButton.addEventListener('click', () => {
+    //     console.log('got to here')
+    //     let product = Number(firstNumber) * Number(secondNumber)
+    //     resultArea.textContent = product;
+    // } )
+</script>
+<style>
+    .fields {
+        display: flex;
+    }
+    .btns {
+        display: flex;
+    }
+</style>
+</html>

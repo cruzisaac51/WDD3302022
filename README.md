@@ -10,3 +10,5 @@ HTML3
 CSS5
 JavaScript
 ```
+# Description
+Portfolio with activities per week base on sitepoint.com and books like Elocuent Javascript
