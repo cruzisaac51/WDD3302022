@@ -12,7 +12,7 @@ const fdate = d.toLocaleDateString("en-uk", options);
 var weeklist = [
     {label: "Week 1", url: "week1/notes.html"},
     {label: "Week 2", url: "week2/index.html"},
-    {label: "Week 3", url: "#"},
+    {label: "Week 3", url: "week3/index.html"},
     {label: "week 4", url: "#"}
 ]; 
 listWeeklyItems (weeklist, "weekList");
