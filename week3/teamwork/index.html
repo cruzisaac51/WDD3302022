@@ -71,14 +71,20 @@
         'Berio, Luciano', 'Berle, Milton', 'Berlin, Irving', 'Berne, Eric', 'Bernhard, Sandra', 'Berra, Yogi', 'Berry, Halle', 
         'Berry, Wendell', 'Bethea, Erin', 'Bevan, Aneurin', 'Bevel, Ken', 'Biden, Joseph', 'Bierce, Ambrose', 'Biko, Steve', 
         'Billings, Josh', 'Biondo, Frank', 'Birrell, Augustine', 'Black, Elk', 'Blair, Robert', 'Blair, Tony', 'Blake, William' ];
+
+    // first problem
     const oldPeople = inventors.filter(inventor => (inventor.year >= 1500 && inventor.year <1600));
 
     document.getElementById("exercise-1").innerHTML = `${oldPeople[0].first} ${oldPeople[0].last}, ${oldPeople[1].first} ${oldPeople[1].last}`
+    
 
+    // second problem
     const allNames = inventors.map(inventor => (inventor.first) + ' ' + (inventor.last) + '')
     
     document.getElementById("exercise-2").innerHTML = `${allNames}`
 
+
+    //third problem
     const sortByBirth = inventors.sort((a,b) => a.year - b.year).reverse()
     
     const birthList = document.createElement("ul")
@@ -90,17 +96,21 @@
         })
         document.getElementById("exercise-3").appendChild(birthList)
     }
-
     addList()
 
+
+    // fourth problem
     const yearsLived = inventors.reduce(function (previousValue, inventor) {
       return previousValue + (inventor.passed - inventor.year);
     }, 0);
 
     document.getElementById("exercise-4").innerHTML = `${yearsLived} years collectively`
 
-    const sortByYearsLived = inventors.sort((a,b) => (a.passed - a.year) - (b.passed - b.year)).reverse()
 
+    // fifth problem
+    const sortByYearsLived = inventors.sort((a,b) => (a.passed - a.year) - (b.passed - b.year)).reverse()
+    
+    
     const yearsLivedList = document.createElement("ul")
     function addSecondList() {
         sortByYearsLived.forEach(function (i) {
@@ -110,7 +120,6 @@
         })
         document.getElementById("exercise-5").appendChild(yearsLivedList)
     }
-
     addSecondList()
 
 
@@ -149,3 +158,4 @@
     // const data = [ 'car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ]; 
 </script>
 </html>
+
