@@ -1,0 +1,100 @@
+body {
+    display: block;
+}
+
+#board {
+    width: max-content;
+    background-color: white;
+    display: block;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+#board div {
+    background-color: white;
+}
+
+.cell {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 75px;
+    text-align: center;
+}
+
+.marker {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 2em;
+}
+.marker-item {
+    border: 5px solid green;
+    font-size: xx-large;
+    background: black;
+    color: white;
+    padding: 0px 20px 0px 30px;
+}
+
+div#result{
+    width: 100%;
+    position: absolute;
+    background-color: green;
+    padding: 26px 356px;
+    margin-top: -238px;
+    margin-bottom: 30px;
+    color: white;
+    display: none;
+    font-size: 4rem;
+}
+
+div#result.visible{
+    display: inherit;
+}
+table{
+    margin-bottom: 30px;
+    border-collapse: collapse;
+}
+
+table,
+table tr,
+table tr td{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+table tr td{
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+}
+
+table tr td span{		
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 40%;
+    line-height: 50px;
+    color: white;
+    font-size: 30px;
+}
+
+table tr td span.player-O{
+    background-color: red;
+}
+
+table tr td span.player-X{
+    background-color: blueviolet;
+}
+
+table.boardBlocked tr td{
+    opacity: 0.2;
+}
+
+.btn {
+    width: 12em;
+    height: 3em;
+    background-color: blue;
+    font-size: larger;
+    color: yellow;
+    border-radius: 10px;
+    cursor: pointer;
+}
