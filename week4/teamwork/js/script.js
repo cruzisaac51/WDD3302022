@@ -121,3 +121,4 @@ function resetBoard(){
 
 // board.addEventListener('click', addPiece);
 // resetButton.addEventListener('click', resetBoard)
+
