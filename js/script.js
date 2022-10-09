@@ -13,7 +13,7 @@ var weeklist = [
     {label: "Week 1", url: "week1/notes.html"},
     {label: "Week 2", url: "week2/index.html"},
     {label: "Week 3", url: "week3/index.html"},
-    {label: "week 4", url: "#"}
+    {label: "week 4", url: "week4/index.html"}
 ]; 
 listWeeklyItems (weeklist, "weekList");
 
