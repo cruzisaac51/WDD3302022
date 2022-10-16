@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Da|Roboto');
+
+body{
+    background: #5F1C1C;
+    font-family: 'Roboto', sans-serif;
+}
+.dojo{
+    background:  url(https://cdn.rawgit.com/alexmwalker/6acbe9040d9fe6e5e9fd758a25e1b2a5/raw/9c8131eb2ccc1e3839a5a5114cb16b5dc74daf04/dojo.svg) no-repeat;
+    width: 100%;
+    height: 800px;
+    background-size: 100% auto;
+    padding-top: 10px;
+}
+.quiz-body{
+    background: rgba(255,255,255,1);
+    margin: 150px 33%;
+    padding: 10px 20px 50px 20px;
+    -webkit-box-shadow: 4px 4px 11px 3px rgba(0,0,0,0.3);
+    -moz-box-shadow: 4px 4px 11px 3px rgba(0,0,0,0.3);
+    box-shadow: 4px 4px 11px 3px rgba(0,0,0,0.3);
+}
+h1{
+    color: #611BBD;
+    font-family: 'Baloo Da', cursive;
+    font-weight: 900;
+    text-align: center;
+    font-size: 48px;
+    margin: 0;
+}
+button {
+    color: #ffffff;
+    background-color: #611BBD;
+    border-color: #130269;
+    border-radius: 4px;
+    margin: 0.2em 0;
+    display: block;
+    width: 100%;
+    font-size: 24px;
+}
+#question {
+    font-size: 24px;
+}
+
+#result{
+    color: #fff;
+    margin: 0.2em 0;
+    width: 100%;
+    text-align: center;
+}
+.correct {
+    background-color: #0c0;
+}
+.wrong {
+    color: #fff;
+    background-color: #c00;
+}
+
+.date {
+    background-color: black;
+    
+}
+.date h2, p {
+    color: #ffffff;
+}
+
+.last{
+    background-color: #ffffff;
+}
+.teamwork {
+    background-color: black;
+    font-size: xx-large;
+}
+.note3 figure{
+    display: flex;
+    flex-direction: column;
+}
+figure img {
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+}
+.keys {
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: url("../images/background.jpeg");
+    background-size: contain;
+  }
+  
+.key {
+    border: .4rem solid rgb(222, 12, 12);
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all .07s ease;
+    width: 5rem;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.4);
+    text-shadow: 0 0 .5rem black;
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+    display: block;
+    font-size: 4rem;
+}
+
+.sound {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #ffc600;
+}
+
+#square {
+    margin: 23px;
+    width: 100px;
+    height: 600px;
+    /* background: rgb(105, 17, 221); */
+}
+/* #square2 {
+    margin: 36px;
+    width: 100px;
+    height: 100px;
+    background: rgb(105, 17, 221);
+} */
+
+/* note 3 */
+
+.score {
+    background: rgba(255,255,255,0.2);
+    padding: 0 3rem;
+    line-height: 1;
+    border-radius: 1rem;
+}
+
+.game {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.hole {
+    flex: 1 0 33.33%;
+    overflow: hidden;
+    position: relative;
+}
+
+.hole:after {
+    display: block;
+    background: url("../images/dirt.svg ") bottom center no-repeat;
+    background-size: contain;
+    content: '';
+    width: 100%;
+    height:70px;
+    position: absolute;
+    z-index: 2;
+    bottom: -30px;
+}
+
+.mole {
+    background: url('../images/mole.svg') bottom center no-repeat;
+    background-size: 60%;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transition:all 0.4s;
+}
+
+.hole.up .mole {
+    top: 0;
+}
