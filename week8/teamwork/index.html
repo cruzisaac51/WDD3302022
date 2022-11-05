@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon API team work</title>
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link data-react-helmet="true" rel="icon" href="../images/pokeapi_192_square.png ">
+    
+
+</head>
+
+<body>
+  <main class="flex">
+
+    <template id="card">
+      
+        <article class="card">
+          <div class="Card">
+            <div class="front">
+                <img src="../images/steel.jpg" alt="imagen header card" class="card-header">
+                <div class="card-body">
+                    <img src="../images/quality.svg" alt="imagen de vitoko" class="card-body-img">
+                    <h1 class="card-body-title">
+                    char
+                        <span>26</span>
+                    </h1>
+                    <p class="card-body-text">London</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-footer-social">
+                        <h3>80K</h3>
+                        <p>Attack</p>
+                    </div>
+                    <div class="card-footer-social">
+                        <h3>803K</h3>
+                        <p> Special attack</p>
+                    </div>
+                    <div class="card-footer-social">
+                        <h3>1.4K</h3>
+                        <p>Defense</p>
+                    </div>
+                </div>
+            </div>
+            <div class="back">
+              <h2></h2>
+              <p class="card-back-text">London</p>
+    
+            </div>
+          </div>
+        </article>
+      
+        
+    </template>
+    <template id="card1">
+     
+        <article class="card1">
+          <div class="Card">
+            <div class="front">
+                <img src="../images/steel.jpg" alt="imagen header card" class="card-header">
+                <div class="card-body">
+                    <img src="../images/quality.svg" alt="imagen de vitoko" class="card-body-img" id="cardbodyimg">
+                    <h1 class="card-body-title" id="cardbodytitle">
+                    char
+                        <span>26</span>
+                    </h1>
+                    <p class="card-body-text" id="cardbodytext">London</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-footer-social1">
+                        <h3>80K</h3>
+                        <p>Attack</p>
+                    </div>
+                    <div class="card-footer-social1">
+                        <h3>803K</h3>
+                        <p> Special attack </p>
+                    </div>
+                    <div class="card-footer-social1">
+                        <h3>1.4K</h3>
+                        <p> Defense</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="back">
+              <h2>???</h2>
+              <p class="card-back-text">London</p>
+
+            </div>
+          </div>
+        </article>
+      
+    </template>
+  </main>
+  <section class="btn">
+    <button type="submit" onClick="refreshPage()" class="btnnext">
+      Next
+    </button>
+  </section>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+  <script src="./js/script.js"></script>
+  <script>
+    $(".Card").flip({
+        axis: 'y',
+        trigger: 'click'
+    });
+  </script>
+    
+</body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>SWAPI Exercise</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+
+  <body>
+    <h1>
+      <a href="https://swapi.dev/" target="_blank" rel="noreferrer">SWAPI</a>
+      Exercise
+    </h1>
+    <main>
+      <div class="listbox">
+        <table id="shiplist">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Length</th>
+              <th>Crew</th>
+            </tr>
+          </thead>
+
+          <tbody></tbody>
+        </table>
+
+        <a id="prev" href="#">&lt;-Prev</a> <a id="next" href="#">Next -&gt;</a>
+      </div>
+      <div id="detailsbox" class="hidden">
+        <dl>
+          <dt>Name:</dt>
+          <dd class="name"></dd>
+          <dt>Model:</dt>
+          <dd class="model"></dd>
+          <dt>Class:</dt>
+          <dd class="class"></dd>
+          <dt>*Movies:</dt>
+          <dd class="movies"></dd>
+        </dl>
+      </div>
+    </main>
+
+    <script src="js/swapi-async.js"></script>
+  </body>
+</html> -->
