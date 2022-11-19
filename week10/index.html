@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week 10</title>
+    <link rel='stylesheet' href='css/style.css'>
+</head>
+<body>
+    <div class="date">
+        <h2>Note 1 form validation</h2>
+    </div>
+    <section class="note1">
+        <form id="form" class="form" action="signup.php">
+            <div class="form-control">
+              <input type="text" placeholder="username" id="username" autocomplete="username"/>
+              <small>Error message</small>
+            </div>
+            <div class="form-control">
+              <input type="email" placeholder="Email" id="email" autocomplete="username"/>
+              <small>Error message</small>
+            </div>
+            <div class="form-control">
+              <input type="password" placeholder="Password" id="password"  autocomplete="new-password"/>
+              <small>Error message</small>
+            </div>
+            <div class="form-control">
+              <input type="password" placeholder="Confirm Password" id="cnfpassword" autocomplete="new-password"/>
+              <small>Error message</small>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <section class="note2">
+        <div class="date">
+            <h2>Note 2 Fetch API</h2>
+        </div>
+        <div class="app">
+            <div class="header">
+              <h1>Infinite Dog App</h1>
+              <div id="breed"></div>
+            </div>
+            <div class="slideshow" id="slideshow">
+          
+            </div>
+          </div>        
+    </section>
+    <section>
+        <div class="date">
+            <h2>Note 3 Playing with CSS Variables and JS</h2>
+        </div>
+        <div class="controls">
+          <label for="spacing">Spacing:</label>
+          <input class="input1" id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+      
+          <label for="blur">Blur:</label>
+          <input class="input1" id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+      
+          <label for="base">Base Color</label>
+          <input class="input1" id="base" type="color" name="base" value="#ffc600">
+        </div>
+      
+        <img class="imagen" src="https://source.unsplash.com/800x500">
+      
+    </section>
+    <section>
+        <div class="teamwork">
+            <h4><a href="../week10/teamwork/index.html">Teamwork</a></h4>
+            <p><a href="../index.html">Go back to home </a></p>
+        </div>
+    </section>
+    <script src='js/script.js'></script>
+</body>
+</html>

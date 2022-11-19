@@ -1,0 +1,10 @@
+.navigation ul{
+    display: flex;
+    justify-content: space-around;
+    background-color: blanchedalmond;
+    list-style: none;
+    font-size: x-large;
+}
+.navigation a{
+    text-decoration: none;
+}
