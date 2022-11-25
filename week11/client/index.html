@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title> Authentication </title>
+    <link rel='stylesheet' href='css/style.css'>
+  </head>
+  <body>
+    
+    <section class="card-login">
+      <header>
+        <h1 class="text-center">Authentication</h1>
+      </header>
+      <div id="errors" class="errors hidden"></div>
+      <div id="login">
+        <form class="form-card">
+          <div class="userstyle">
+            <label for="username"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <circle cx="12" cy="7" r="4" />
+              <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+            </svg></label>
+            <input
+              type="text"
+              class="form-control"
+              id="username"
+              placeholder="Username"
+              value="user1@email.com"
+            />
+          </div>
+          <div class="userstyle">
+            <label for="password"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-lock" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <rect x="5" y="11" width="14" height="10" rx="2" />
+              <circle cx="12" cy="16" r="1" />
+              <path d="M8 11v-4a4 4 0 0 1 8 0v4" />
+            </svg></label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="Password"
+            />
+          </div>
+          <button type="button" class="btn">
+            Login
+          </button>
+        </form>
+        <div id="token-display"></div>
+      </div>
+
+      <div id="content" class="hidden">
+        <form name="postForm">
+          <div>
+            <label for="title">Title</label>
+            <input
+              type="text"
+              class="form-control"
+              name="title"
+              placeholder="title"
+              required
+            />
+          </div>
+          <div>
+            <label for="content">Content</label>
+            <input
+              type="text"
+              class="form-control"
+              name="content"
+              placeholder="content"
+              required
+            />
+          </div>
+          <div id="postError"></div>
+
+          <input type="submit" id="createSubmit" class="btn"/>
+        </form>
+        <ul id="list"></ul>
+      </div>
+    </section>
+    <script type="module" src="js/week11.js"></script>
+  </body>
+</html>
