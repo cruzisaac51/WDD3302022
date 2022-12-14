@@ -1,0 +1,322 @@
+:root{
+    /* COLORS */
+    --color: #9176FF;
+    --dark-color: #2b2b2b;
+    --dark-icon-color: #fff;
+    --light-color: #f7f7f7;
+    --light-icon-color: #FFDE59;
+}
+
+body {
+    background-image: url(../images/light2.svg);
+}
+
+h1 {
+    color: rgb(4, 5, 12);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: xxx-large;
+}
+
+a {
+    color: white;
+    font-size: 12px;
+    text-align: left;
+}
+
+.container {
+    width: 85%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: rgba(236, 241, 241, 0.2);
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: auto;
+}
+#zipCodeCheck {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: xx-large;
+}
+#weatherInfo {
+    height: auto;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+#output {
+    flex-direction: column;
+    justify-items: center;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 10px;
+    line-height: 30px;
+}
+input {
+    background-color: rgb(219, 246, 255);
+    width: 55px;
+    height: 25px;
+}
+
+/* checks any valid <input> */
+input:valid {
+    background-color: rgba(0, 128, 0, 0.13);
+    padding: 14px 35px;
+    border-radius: 8px;
+}
+
+input:invalid {
+    padding: 14px 35px;
+    border-radius: 8px;
+    border: 2px solid red;
+    box-shadow: 0 2px 5px 0 red, 0 2px 5px 0 red;
+}
+
+
+.button {
+    background-color:var(--dark-color);
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 145px;
+}
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(49, 31, 31, 0.836), 0 17px 50px 0 rgba(156, 154, 154, 0.19);
+    border: 1px solid rgb(29, 141, 29);
+    font-size: larger;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+    width: auto;
+    font-family: monospace;
+}
+
+
+
+footer {
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+footer a {
+    color: var(--dark-color)
+}
+
+i {
+    font-size: smaller;
+}
+
+.forecast {
+    margin: 10px;
+    width: 150px;
+    display: flex;
+    border: 1px solid black;
+}
+
+div {
+    text-align: center;
+    justify-content: center;
+}
+
+#Alert {
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    width: 90%;
+    margin: auto;
+}
+
+#icon {
+    background-color: rgb(160, 217, 236);
+    width: 100px;
+    height: auto;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#starting {
+    font-size: 42px;
+    line-height: 50px;
+    width: auto;
+    height: auto;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(236, 241, 241, 0.9);
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+}
+
+#buttons {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: stretch;
+    gap: 5px;
+}
+
+.explain {
+    text-align: left;
+    align-self: center;
+    line-height: normal;
+    font-style: italic;
+    font-size: small;
+}
+
+/* buttton dark/light mode */
+
+/* -------------- BUTTON -------------- */
+.btn{
+    background-color: #fff;
+    width: 9rem;
+    height: 4rem;
+    border-radius: 10em;
+    box-shadow: inset 0 8px 60px rgb(0 0 0 / 10%), inset 0 8px 8px rgb(0 0 0 / 10%), inset 0 -4px 4px rgb(0 0 0 / 10%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: flex-start;
+}
+  
+.btn__indicator{
+    background-image: url(../images/light2.svg);
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+  
+    position: absolute;
+  
+    box-shadow: 0 8px 40px rgba(0,0,0, .2);
+  
+    transition: transform .3s ease;
+}
+  
+.btn__icon-container{
+    width: 100%;
+    height: 100%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.btn__icon{
+    color: var(--light-icon-color);
+    font-size: 3rem;
+}
+  
+/* -------------- ANIMATION ------------ */
+.btn__icon.animated{
+    animation: spin 0.5s;
+}
+  
+@keyframes spin{
+    to {
+      transform: rotate(360deg);
+    }
+}
+  
+/* -------------- DARKMODE -------------- */
+body.darkmode{
+    background-image: url(../images/night2.svg);
+}
+
+
+@supports ((backdrop-filter: blur(4px))) or (-webkit-backdrop-filter: blur(4px)) {
+    body.darkmode{
+    }
+}
+@supports ((backdrop-filter: blur(4px))) or (-webkit-backdrop-filter: blur(4px)) {
+    body {
+    }
+}
+  
+.darkmode .btn{
+    box-shadow: inset 0 8px 60px rgba(0,0,0, .3),
+                inset 8px 0 8px rgba(0,0,0, .3),
+                inset 0 -4px 4px rgba(0,0,0, .3);
+}
+  
+.darkmode .btn__indicator{
+    transform: translateX(5em);
+    background-image: url(../images/night2.svg);
+    box-shadow: 0 8px 40px rgba(0,0,0, .3);
+}
+  
+.darkmode .btn__icon{
+    color: var(--dark-icon-color);
+}
+.darkmode h1 {
+    color: rgb(90, 206, 13);
+}
+.darkmode a{
+    color: lightgray;
+}
+.darkmode .container{
+    border: 1px solid gray;
+    background-color: rgb(0 0 0 / 90%);
+    color: rgb(61 175 23);
+    box-shadow: 0 12px 16px 0 rgb(143 143 143 / 24%), 0 12px 16px 0 rgb(143 143 143 / 19%);
+}
+.darkmode .button {
+    background-color: #20b825;
+    color: rgb(12, 12, 12);
+}
+.darkmode #Alert {
+    color:greenyellow;
+}
+.darkmode input:valid{
+    background-color: rgb(248, 248, 248);
+}
+.darkmode .forecast {
+    border: 1px solid greenyellow;
+}
+.darkmode footer {
+    color: rgb(13, 218, 13);
+}
+.darkmode footer a {
+    color: rgb(13, 218, 13);
+}
+.darkmode #starting {
+    background-color:rgb(0 0 0 / 90%);
+}
+@media only screen and (max-width: 480px) {
+    #forecastOutput {
+        flex-direction: column;
+        align-items: center;
+    }
+    #buttons{
+        display: grid;
+        grid-template-columns: 1fr 1fr
+    }
+    #starting {
+        font-size: xx-large;
+    }
+}
